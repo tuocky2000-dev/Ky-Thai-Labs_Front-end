@@ -1,0 +1,237 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.wrapper h2 {
+    font-size: 80%;
+    text-align: center;
+}
+
+.wrapper ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+.wrapper ul li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+    width: 35px;
+    text-align: center;
+}
+
+.wrapper ul li i {
+    display: block;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    font-size: 12px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 200px;
+    transition: all 0.5s ease;
+    width: CALC(100%+200px);
+    margin-right: -200px;
+    transition: grid-template-columns 0.5s ease;
+
+}
+
+.box01 li {
+    transition: all 0.5s ease;
+}
+
+.box02 li a {
+    transition: all 0.5s ease;
+}
+
+.box03 li i {
+    transition: all 0.5s ease;
+}
+
+.box04 li {
+    transition: all 0.5s ease;
+}
+
+.box05 li {
+    transition: all 0.5s ease;
+}
+
+.box06 .b1 {
+    transition: all 0.5s ease;
+}
+
+.box06 .b2 {
+    transition: all 0.5s ease;
+}
+
+.box06 .b3 {
+    transition: all 0.5s ease;
+}
+
+.box06 .b4 {
+    transition: all 0.5s ease;
+}
+
+.box01 li:hover {
+    background-color: red;
+}
+
+.box02 li:hover a {
+    color: red;
+}
+
+.box03 li:hover i {
+    color: red;
+}
+
+.box04 li:hover {
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.box05 li:hover {
+    border-bottom: 6px solid red;
+}
+
+.box06 .b1:hover {
+    border-bottom: 6px solid pink;
+}
+
+.box06 .b2:hover {
+    border-bottom: 6px solid cyan;
+}
+
+.box06 .b3:hover {
+    border-bottom: 6px solid yellow;
+}
+
+.box06 .b4:hover {
+    border-bottom: 6px solid purple;
+}
+
+.wrapper div {
+    border: 1px solid black;
+    margin: 6px;
+}
+
+.box07 {
+    background-color: black;
+    padding-left: 0px;
+}
+
+.wrapper .box07 li {
+    display: block;
+    padding-left: 2px;
+    margin: 0px;
+}
+
+.box07 li:hover a {
+    color: black;
+}
+
+.wrapper .box07 li:hover {
+    background-color: pink;
+    transition: all 0.5s ease;
+    width: auto;
+    text-align: left;
+}
+
+.wrapper .box08 li {
+    display: block;
+    padding-left: 2px;
+    margin: 0px;
+    transition: all 0.5s ease-in-out;
+    width: auto;
+    text-align: left;
+}
+
+.wrapper .box08 li a {
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.box08 {
+    background-color: black;
+    padding-left: 0px;
+}
+
+.wrapper .box08 li:hover a {
+    color: black;
+}
+
+.wrapper .box08 li:hover {
+    background-color: yellow;
+}
+
+.box09 {
+    padding-left: 0px;
+    background-color: white;
+}
+
+.wrapper .box09 li {
+    display: block;
+    padding-left: 2px;
+    margin: 0px;
+    background-color: orange;
+    transition: all 0.5s ease;
+}
+
+.wrapper .box09 li:hover {
+    width: 96.5%;
+    text-align: right;
+}
+
+.box10 li i {
+    transition: all 0.5s ease;
+}
+
+.box10 li i:hover {
+    transform: rotate(360deg);
+}
+
+.box11 li i:hover {
+    transform: rotateY(180deg);
+}
+
+.box12 li i:hover {
+    transform: rotateX(180deg);
+}
+
+
+aside {
+    width: 100px;
+    top: 0%;
+    will-change: transform, opacity;
+    transform: translateX(100%);
+    pointer-events: none;
+    transition: transform 0.5s ease;
+}
+
+main.open {
+    grid-template-columns: 1fr 0.8fr;
+}
+
+main.open aside {
+    transform: translateX(80%);
+    pointer-events: auto;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+aside ul li {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 3px;
+}

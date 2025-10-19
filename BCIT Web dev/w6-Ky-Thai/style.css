@@ -1,0 +1,72 @@
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: khaki;
+    padding: 1%;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+    border-radius: 50%;
+    transition: transform 2s ease; 
+    /*
+        all - makes everything move
+        2s  - the time it takes for it to move across
+        translation-delay 
+        In inspector we can inspect the transition (ease) and we can copy the physics into our code (BEZIER)
+    */
+    animation: bounce 1s ease forwards infinite alternate;
+}
+
+.parent:hover .child{
+    transform: translateX(300px);
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+li{
+    border: 1px solid coral;
+    padding: 1%;
+    transition: all 2s ease;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 2s ease;
+}
+
+li:hover{
+    background-color: darkred;
+}
+
+li:hover a{
+    color: white;
+}
+
+@keyframes bounce {
+    0%{
+        transform:translateX(0);
+    }
+    33%{
+        transform:translateX(300px) translateY(300px);
+    }
+    50%{
+        background-color: white;
+    }
+    66%{
+        transform:translateY(300px);
+    }
+    100%{
+        transform:translateX(300px);
+    }
+}

@@ -1,0 +1,20 @@
+html{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.first-paragraph{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(3, 136, 252)
+}
+#classes h2{
+    color: olive;
+}
+#fragmentIdentifiers h2{
+    color: midnightblue
+}
+/* IDs have the highest presedence */
+body{
+    padding-bottom: 50vh;
+/* vh = viewport height */
+}

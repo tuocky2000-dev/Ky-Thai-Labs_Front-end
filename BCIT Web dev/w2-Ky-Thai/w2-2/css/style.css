@@ -1,0 +1,28 @@
+
+body{
+    background-color:rgb(198, 255, 255);
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+header{
+    background-color: beige;
+}
+
+h1, h2, h1 a{
+    color:crimson;
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+    list-style-type: none;
+}
+main ul{
+    color:deeppink;
+}
+main ul li ul li{
+    color:black
+}
+footer {
+    border-top: 1px solid black;
+}
